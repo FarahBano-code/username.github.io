@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="container-fluid text-center comp">
+    <h1 class="fw-bold display-3">🎉 Happy Birthday 🎂
+      <div id="name"></div>
+    </h1>
+    <p class="fs-4 col-8">🎂 Birthdays are nature’s way of telling us to eat cake 🍰 and celebrate life 🎉. So today,
+      let’s fill the air with laughter 😂 and magic ✨. Happy Birthday! 🥳</p>
+  </div>
+
+  <main class="gallery">
+    <div class="row g-3 mt-3">
+      <div class="col-12 col-md-4">
+        <div class="photo-frame horizontal"><img src="assets/images/Snapchat-1569020458.webp"></div>
+        <div class="photo-frame horizontal"><img src="assets/images/ku - Edited.jpg"></div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="photo-frame vertical"><img src="assets/images/6ad25995-8973-4c32-9c5c-ea5ef26745a0.jpg"></div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="photo-frame horizontal"><img src="assets/images/8eab7ca8-d17d-4163-9cfc-ba4f59c448e9.jpg"></div>
+        <div class="photo-frame horizontal"><img src="assets/images/google.jpg"></div>
+      </div>
+    </div>
+
+    <div class="row g-3 mt-3">
+      <div class="col-12 col-md-4">
+        <div class="photo-frame vertical"><img src="assets/images/tuk.jpg"></div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="photo-frame horizontal"><img src="assets/images/a374a35b-4b90-467c-8e6e-b7e339a3007e.jpg"></div>
+        <div class="photo-frame horizontal"><img src="assets/images/google.jpg"></div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="photo-frame vertical"><img src="assets/images/23f9a16c-e419-4d05-838b-2878ad9dad40.jpg"></div>
+      </div>
+    </div>
+  </main>
+  <h1 class="caption">May this picture bring a smile to your face</h1>
+  <script>
+    let name = prompt("Enter your name");
+
+    if (name) {
+      localStorage.setItem("text", name);
+
+      document.getElementById("name").innerText = localStorage.getItem("text")
+    }
+  </script>
+</body>
+
+</html>
